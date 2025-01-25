@@ -30,5 +30,17 @@ after i generated a repository i had to clone it in my local machine! so i found
 memory leak happens when we use memory to initialize some variables in our program but they don't get free after program is finished. some functions can cause this problem such as malloc() in c
 \subsubsection{Memory profilers}
 Valgrind is a tool to solve the memory leak problem! it checks if program has used some special functions which can unfree memory and free that space! it also finds accebility of user to some space of memory which user didn't suppose to access
+\subsection{GNU/Linux Bash Scripting}
+\subsubsection{fzf}
+it is a powerful command line tool which help us search folders, files, history commands and ...!it is so powerful and you don't need to search exact name of your purpused item! it finds every algorithms and find your item by incompleted searches!\newline
+underline{ls | fzf}:\newline
+this command lists all the files and items in currient dir and we can search whatever we want there and it simply show us where it is!
+\subsubsection{ Using fzf to find your favorite PDF}
+\begin{enumerate}
+    \item fd -e pdf
+    \item fd -e pdf | fzf
+\end{enumerate}
+\subsubsection{Opening the file using Zathura}
+zathura \$(find /path/to/search -name "filename.pdf")
 
 \end{document}
