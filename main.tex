@@ -25,4 +25,10 @@ after i generated a repository i had to clone it in my local machine! so i found
     \item folding\newline
     in vim (Normal mode) by zM all sections get closed, zR opens them
 \end{enumerate}
+\subsection{Memory profiling}
+\subsubsection{Memory Leak}
+memory leak happens when we use memory to initialize some variables in our program but they don't get free after program is finished. some functions can cause this problem such as malloc() in c
+\subsubsection{Memory profilers}
+Valgrind is a tool to solve the memory leak problem! it checks if program has used some special functions which can unfree memory and free that space! it also finds accebility of user to some space of memory which user didn't suppose to access
+
 \end{document}
